@@ -658,8 +658,6 @@
 <div class="progress-dots" id="dots">
   <div class="dot active"></div>
   <div class="dot"></div>
-  <div class="dot"></div>
-  <div class="dot"></div>
 </div>
 
 <div class="screens">
@@ -691,31 +689,26 @@
     </div>
   </div>
 
-  <!-- SCREEN 2 — COCKTAILS -->
-  <div class="screen cocktail-screen" id="screen-1">
-    <div class="screen-inner">
-      <div class="top-bar">
-        <div class="top-bar-left">
-          <span class="brand-name">Slow Burn</span>
-          <div class="brand-sep"></div>
-          <span class="event-date">Somewhere CLT · Every Thursday</span>
+  <!-- SCREEN 2 — COMBINED DRINKS + HOOKAH -->
+  <div class="screen" id="screen-1" style="display:none;">
+    <div class="screen-inner" style="flex-direction:row;gap:0;padding:40px 0;">
+
+      <!-- LEFT — COCKTAILS -->
+      <div style="flex:1;padding:0 48px;border-right:0.5px solid rgba(201,57,181,0.2);display:flex;flex-direction:column;justify-content:center;">
+        <div class="top-bar" style="margin-bottom:28px;">
+          <div class="top-bar-left">
+            <span class="brand-name">Slow Burn</span>
+            <div class="brand-sep"></div>
+            <span class="event-date">Somewhere CLT</span>
+          </div>
+          <span class="top-bar-right">Cocktails</span>
         </div>
-        <span class="top-bar-right">Signature Cocktails</span>
-      </div>
-      <div class="content-area">
-        <div class="screen-section-title">Signature Cocktails</div>
-        <div class="drinks-grid">
+        <div class="screen-section-title" style="margin-bottom:20px;">Signature Cocktails</div>
+        <div style="display:flex;flex-direction:column;gap:0;">
           <div class="drink-item">
             <div class="drink-left">
               <p class="drink-name-tv">Slow Burn <span class="drink-badge-tv">Signature</span></p>
-              <p class="drink-ingredients-tv">Tequila · Hibiscus · Jalapeño · Lime · Agave</p>
-            </div>
-            <span class="drink-price-tv">$13</span>
-          </div>
-          <div class="drink-item">
-            <div class="drink-left">
-              <p class="drink-name-tv">Night Cap <span class="drink-badge-tv">Espresso</span></p>
-              <p class="drink-ingredients-tv">Vanilla Vodka · Kahlúa · Cold Brew · Cinnamon</p>
+              <p class="drink-ingredients-tv">Don Julio Reposado · Strawberry · Jalapeño · Lime · Agave</p>
             </div>
             <span class="drink-price-tv">$13</span>
           </div>
@@ -729,44 +722,57 @@
           <div class="drink-item">
             <div class="drink-left">
               <p class="drink-name-tv">Rose Gold</p>
-              <p class="drink-ingredients-tv">Hennessy · Hibiscus Syrup · Lemon Juice · Prosecco</p>
+              <p class="drink-ingredients-tv">Hennessy · Watermelon · Lemon Juice · Prosecco</p>
             </div>
             <span class="drink-price-tv">$14</span>
           </div>
-          <div class="drink-item" style="border-bottom:none;">
+          <div class="drink-item">
             <div class="drink-left">
               <p class="drink-name-tv">Simmer Down</p>
               <p class="drink-ingredients-tv">Crown Apple · Peach Schnapps · Lemonade · Grenadine</p>
             </div>
             <span class="drink-price-tv">$11</span>
           </div>
+          <div class="drink-item" style="border-bottom:none;">
+            <div class="drink-left">
+              <p class="drink-name-tv">Night Cap <span class="drink-badge-tv">Espresso</span></p>
+              <p class="drink-ingredients-tv">Vanilla Vodka · Kahlúa · Cold Brew</p>
+            </div>
+            <span class="drink-price-tv">$13</span>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- SCREEN 3 — HOOKAH -->
-  <div class="screen hookah-screen" id="screen-2">
-    <div class="screen-inner">
-      <div class="top-bar">
-        <div class="top-bar-left">
-          <span class="brand-name">Slow Burn</span>
-          <div class="brand-sep"></div>
-          <span class="event-date">Somewhere CLT · Every Thursday</span>
+      <!-- RIGHT — HOOKAH -->
+      <div style="flex:1;padding:0 48px;display:flex;flex-direction:column;justify-content:center;">
+        <div class="top-bar" style="margin-bottom:28px;">
+          <div class="top-bar-left">
+            <span class="brand-name">Slow Burn</span>
+            <div class="brand-sep"></div>
+            <span class="event-date">Somewhere CLT</span>
+          </div>
+          <span class="top-bar-right">Hookah</span>
         </div>
-        <span class="top-bar-right">Hookah Blends</span>
-      </div>
-      <div class="content-area">
-        <div class="screen-section-title">Hookah Blends</div>
-        <div class="hookah-promo-badge">
+        <div class="screen-section-title" style="margin-bottom:12px;">Hookah Blends</div>
+        <div class="hookah-promo-badge" style="margin-bottom:20px;">
           <span class="hookah-promo-text">Half Off All Night</span>
           <span class="hookah-promo-detail">Every Thursday · While You're Here</span>
         </div>
-        <div class="hookah-grid">
+        <div style="display:flex;flex-direction:column;gap:0;">
           <div class="hookah-item-tv">
             <div>
               <p class="hookah-name-tv">Amber Haze</p>
               <p class="hookah-flavors-tv">Double Apple · Cinnamon · Mint</p>
+            </div>
+            <div class="hookah-price-tv">
+              <span class="hookah-regular-tv">$40</span>
+              <span class="hookah-promo-tv">$20</span>
+            </div>
+          </div>
+          <div class="hookah-item-tv">
+            <div>
+              <p class="hookah-name-tv">Wildfire</p>
+              <p class="hookah-flavors-tv">Mango · Passion Fruit · Lemon Ice</p>
             </div>
             <div class="hookah-price-tv">
               <span class="hookah-regular-tv">$40</span>
@@ -783,17 +789,7 @@
               <span class="hookah-promo-tv">$20</span>
             </div>
           </div>
-          <div class="hookah-item-tv" style="border-bottom:none;">
-            <div>
-              <p class="hookah-name-tv">Wildfire</p>
-              <p class="hookah-flavors-tv">Mango · Passion Fruit · Lemon Ice</p>
-            </div>
-            <div class="hookah-price-tv">
-              <span class="hookah-regular-tv">$40</span>
-              <span class="hookah-promo-tv">$20</span>
-            </div>
-          </div>
-          <div class="hookah-item-tv" style="border-bottom:none;">
+          <div class="hookah-item-tv">
             <div>
               <p class="hookah-name-tv">Glow</p>
               <p class="hookah-flavors-tv">Watermelon · Peach · Mint Ice</p>
@@ -803,57 +799,20 @@
               <span class="hookah-promo-tv">$20</span>
             </div>
           </div>
-        </div>
-        <div style="margin-top:24px;padding-top:20px;border-top:0.5px solid rgba(201,57,181,0.2);display:flex;justify-content:space-between;align-items:center;">
-          <div>
-            <p style="font-family:'Cinzel',serif;font-size:20px;letter-spacing:0.1em;color:rgba(195,155,211,0.8);margin-bottom:4px;">Repack</p>
-            <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:rgba(195,155,211,0.45);">Fresh bowl · same blend · keep the night going</p>
+          <div style="margin-top:20px;padding-top:16px;border-top:0.5px solid rgba(201,57,181,0.2);display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <p style="font-family:'Cinzel',serif;font-size:20px;letter-spacing:0.1em;color:rgba(195,155,211,0.8);margin-bottom:4px;">Repack</p>
+              <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:rgba(195,155,211,0.45);">Fresh bowl · same blend · keep the night going</p>
+            </div>
+            <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:32px;color:var(--gold);">$10</p>
           </div>
-          <p style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:32px;color:var(--gold);">$10</p>
         </div>
       </div>
+
     </div>
   </div>
 
-  <!-- SCREEN 4 — THE VIBE -->
-  <div class="screen vibe-screen" id="screen-3">
-    <div class="screen-inner">
-      <div class="top-bar">
-        <div class="top-bar-left">
-          <span class="brand-name">Slow Burn</span>
-          <div class="brand-sep"></div>
-          <span class="event-date">Somewhere CLT · Every Thursday</span>
-        </div>
-        <span class="top-bar-right">Table Experience</span>
-      </div>
-      <div class="content-area">
-        <div class="vibe-left">
-          <p class="vibe-label-tv">Section Experience</p>
-          <h2 class="vibe-title-tv">THE<br>VIBE</h2>
-          <div class="vibe-divider-tv"></div>
-          <p class="vibe-tagline-tv">"Your girls. Your table. All night."</p>
-          <div class="vibe-price-tv">
-            <span class="vibe-amount-tv">$250</span>
-            <span class="vibe-cap-tv">Minimum spend · Up to 6 guests</span>
-          </div>
-          <p class="contact-line">Book your section: <strong>704-242-7068</strong> &nbsp;·&nbsp; RSVP on Posh</p>
-        </div>
-        <div class="vibe-right">
-          <div class="vibe-includes-tv">
-            <p class="vibe-includes-label">What's included</p>
-            <div class="vibe-include-item">Reserved section all night</div>
-            <div class="vibe-include-item">Dedicated server all night</div>
-            <div class="vibe-include-item">Up to 6 guests</div>
-            <div class="vibe-include-item">Hookah counts toward spend</div>
-            <div class="vibe-include-item">Birthday setup available</div>
-            <div class="vibe-bottles-tv">
-              <p class="vibe-bottles-label-tv">Your $250 goes toward anything — bottles, hookah, cocktails, or a mix of all three</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- SCREEN 3 — REMOVED -->
 
 </div>
 
@@ -880,7 +839,7 @@
   const screens = document.querySelectorAll('.screen');
   const dots = document.querySelectorAll('.dot');
   let current = 0;
-  const DURATION = 8000; // 8 seconds per screen
+  const DURATION = 25000; // 25 seconds per screen
 
   function goToScreen(index) {
     screens[current].classList.remove('active');
